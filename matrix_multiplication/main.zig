@@ -7,7 +7,7 @@ const Random = std.rand.Random;
 pub fn main() !void {
     // just a simple matrix multiply program to look at
     const ally = std.heap.page_allocator;
-    comptime var N = 1024;
+    comptime var N = 2048;
     var a = try Matrix(f32, N).init_random(ally);
     var b = try Matrix(f32, N).init(ally, 0);
     var c = try Matrix(f32, N).init(ally, 0);
